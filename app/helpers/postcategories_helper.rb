@@ -1,0 +1,2 @@
+module PostcategoriesHelper
+end
