@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nancyatterapp_id: 1
+  user_id: 1
+  nickname: MyString
+  profile_image: MyString
+  profile: MyString
+  del_flag: 1
+
+two:
+  nancyatterapp_id: 1
+  user_id: 1
+  nickname: MyString
+  profile_image: MyString
+  profile: MyString
+  del_flag: 1

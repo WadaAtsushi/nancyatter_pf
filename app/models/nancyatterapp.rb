@@ -1,0 +1,2 @@
+class Nancyatterapp < ApplicationRecord
+end

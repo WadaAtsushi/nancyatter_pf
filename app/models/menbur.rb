@@ -1,0 +1,2 @@
+class Menbur < ApplicationRecord
+end

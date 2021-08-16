@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  app_name: MyString
+  main_text: MyString
+  introduction: MyString
+  loure: MyString
+  app_image: MyString
+  app_color: MyString
+  user_id: 1
+  appcategory_id: 1
+  feature_like: MyString
+  feature_comment: MyString
+  feature_category: 
+  feature_image: MyString
+
+two:
+  app_name: MyString
+  main_text: MyString
+  introduction: MyString
+  loure: MyString
+  app_image: MyString
+  app_color: MyString
+  user_id: 1
+  appcategory_id: 1
+  feature_like: MyString
+  feature_comment: MyString
+  feature_category: 
+  feature_image: MyString
