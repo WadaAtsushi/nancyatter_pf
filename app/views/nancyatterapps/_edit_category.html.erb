@@ -1,0 +1,11 @@
+<%= tag.h4 "投稿カテゴリー追加", class:"mt-3" %>
+  <%= form_for(@postcategory, url: postcategory_create_path) do |f| %>
+    <%= f.text_field :category_name, class: "form-control", placeholder: "15文字以内で入力してください。" %>
+    <%= tag.div f.submit :"追加", class: "btn btn-primary mt-3" %>
+  <% end %>
+
+<%= tag.h4 "投稿カテゴリー削除", class: "mt-5" %>
+  <%= form_for(@postcategory, url: postcategory_destroy_path) do |f| %>
+    <%= f.collection_select :id, Postcategory.where(nancyatterapp_id: @current_app.id), :id, :category_name, {include_blank: "選択してください"},{class: "form-control input-sm"} %>
+    <%= tag.div f.submit :"削除", class: "btn btn-primary mt-3" %>　
+  <% end %>

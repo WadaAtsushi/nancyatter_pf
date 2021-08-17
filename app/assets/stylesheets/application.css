@@ -13,3 +13,38 @@
  *= require_tree .
  *= require_self
  */
+
+ .flash {
+    padding: 10px 0;
+    width: 60%;
+    color: rgb(0, 0, 0);
+    background: rgb(133, 253, 159);
+    text-align: center;
+    margin: auto;
+    top: 60px;
+    z-index: 10;
+    border-radius: 5px;
+    font-size: 24px;
+  }
+
+  .form-error {
+    color: #ff4d75;
+    text-align: center;
+  }
+  
+  .bg-light {
+    background-color: rgb(34, 235, 16);
+  }
+
+  .text-light {
+    text-decoration: none;
+    color: white;
+  }
+
+  .like-btn-unlike {
+    color: #ff2581;
+  }
+
+  .like-btn {
+    color: #3b3b3b;
+  }

@@ -4,6 +4,7 @@ class CreateMenburs < ActiveRecord::Migration[6.1]
       t.integer :nancyatterapp_id
       t.integer :user_id
       t.string :nickname
+      t.string :icon_image
       t.string :profile_image
       t.string :profile
       t.integer :del_flag

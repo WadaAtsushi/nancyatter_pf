@@ -1,2 +1,32 @@
-<h1>Nancyatterapps#new</h1>
-<p>Find me in app/views/nancyatterapps/new.html.erb</p>
+<div class="container-fluid" >
+  <div class="row justify-content-center">
+    <div class="col-sm-10 col-md-8 col-lg-5 mb-5 mt-5" >
+      <%= tag.h1 "SNS新規作成", class:"mt-2" %>
+        <%= form_for(@nancyatterapp, url: newapp_create_path) do |f| %>
+          <%= f.label :"アプリ名", class: "mt-3" %>
+          <%= f.text_field :app_name, class: "form-control" %>
+          <%= f.label :"メインテキスト", class: "mt-3" %>
+          <%= f.text_field :main_text, class: "form-control" %>
+          <%= f.label :"紹介文", class: "mt-3" %>
+          <%= f.text_area :introduction, class: "form-control" %>
+          <%= f.label :"利用ルール", class: "mt-3" %>
+          <%= f.text_area :loure, class: "form-control" %>
+          <%= tag.div f.label :"カテゴリー", class: "mt-3" %>
+          <%= f.collection_select :appcategory_id, Appcategory.all, :id, :category_name, {include_blank: "選択してください"},{class: "form-control input-sm"} %>
+          <%= tag.div f.label :"イメージカラー", class: "mt-3" %>
+          <%= f.select :app_color, [["レッド","red"], ["ブルー", "blue"], ["イエロー", "yellow"], ["グリーン", "green"], ["ブラック", "black"], ["デフォルト", "default"]], include_blank:"色を選択してください" %>
+          <%= tag.div f.label :"SNSトップ画像", class: "mt-3" %>
+          <%= f.file_field :app_image %>
+          <%= tag.div f.label :"いいね機能", class: "mt-3" %>
+          <%= f.select :feature_like, [["いる","implement"], ["いらない",nil]], include_blank: "選択して下さい" %>
+          <%= tag.div f.label :"コメント機能", class: "mt-3" %>
+          <%= f.select :feature_comment, [["いる","implement"], ["いらない",nil]], include_blank: "選択して下さい" %>
+          <%= tag.div f.label :"画像投稿", class: "mt-3" %>
+          <%= f.select :feature_image, [["いる","implement"], ["いらない",nil]], include_blank: "選択して下さい" %>
+          <%= tag.div f.label :"カテゴリー選択", class: "mt-3" %>
+          <%= f.select :feature_category, [["いる","implement"], ["いらない",nil]], include_blank: "選択して下さい" %>
+          <%= tag.div f.submit :"アプリ作成", class: "btn btn-primary mt-3" %>
+        <% end %>
+    </div>
+  </div>
+</div>

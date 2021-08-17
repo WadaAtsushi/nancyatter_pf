@@ -1,0 +1,9 @@
+<div class="new-comment">
+    <% new_comment = @post.comments.new %>
+    <%= form_for(new_comment, url: comment_create_path(new_comment.post.id)) do |f| %>
+        <%= tag.h3 f.label :"コメントを追加",  class: "post-new-label mt-3" %>
+        <%= f.text_area :comment_text , class: "form-control"%>
+        <%= f.hidden_field :post_id, value: new_comment.post.id %>
+        <%= tag.div f.submit "投稿", class: "btn btn-primary post-new-label mt-2 mb-3" %>
+    <% end %>
+</div>

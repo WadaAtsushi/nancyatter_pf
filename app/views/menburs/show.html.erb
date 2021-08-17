@@ -1,2 +1,13 @@
-<h1>Menburs#show</h1>
-<p>Find me in app/views/menburs/show.html.erb</p>
+<div class="container-fluid" >
+  <div class="row justify-content-center mt-4">
+    <%= render 'menburs/profile' %>
+  </div>
+  <div class="row justify-content-center mt-5">
+    <%= render 'menburs/posts_index' %>
+  </div>
+  <div class="row" >
+    <div class="d-flex justify-content-center mt-3">
+      <%= paginate @posts%>
+    </div>
+  </div>
+</div>

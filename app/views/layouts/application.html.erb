@@ -39,15 +39,13 @@
     <link href="starter-template.css" rel="stylesheet">
   </head>
   
-  <body>
-  <!--
+
   <body class="<%= @text_color %>" style = "<%= @body_bg_color %>">
-    -->
     <header>
-      
+      <%= render 'layouts/navbar', current_user: @current_user, current_app: @current_app, current_menbur: @current_menbur %>
     </header>
     <main>
-      
+      <%= render 'layouts/message' %>
       <%= yield %>
     </main>
     <footer>

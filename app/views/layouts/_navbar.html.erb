@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg <%= @nav_text_color %>" style = "<%= @nav_bg_color%>">
+  <div class="container-fluid">
+    <%= link_to("Nancyatter", app_logout_path, class: "navbar-brand #{@nav_text_color}") %>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <% if current_user && current_app && current_menbur  %>
+          <%= link_to("アプリトップ", posts_top_path(current_app.id), class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
+          <%= link_to("プロフィール", menbur_show_path(current_menbur.id), class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
+          <% if current_user == User.find_by(id: current_app.user_id) %>
+            <%= link_to("アプリ管理", app_admin_path(current_app.id), class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
+          <% end %>
+          <%= link_to("appメンバー", menburs_index_path, class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
+          <%= link_to("新規投稿", post_new_path, class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
+          <%= link_to("投稿一覧", post_index_path, class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
+
+        <% elsif current_user && current_app%>
+          <%= link_to("アプリトップ", posts_top_path(current_app.id), class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
+          <% if current_user == User.find_by(id: current_app.user_id) %>
+            <%= link_to("アプリ管理", app_admin_path(current_app.id), class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
+          <% end %>
+          <%= link_to("メンバー登録", menbur_new_path, class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
+          <%= link_to("投稿一覧", post_index_path, class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
+
+        <% elsif current_user %>
+          <%= link_to("SNS新規作成", app_new_path, class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
+          <%= link_to("ユーザーページ", user_show_path, class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
+          <%= link_to("アプリ一覧", app_index_path, class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
+          <%= link_to("ログアウト", logout_path, class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
+          
+        <% else %>
+          <!-- ユーザー一覧は確認用 -->
+          <%= link_to("ユーザー一覧", users_index_path, class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
+          <%= link_to("会員登録", signin_path, class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
+          <%= link_to("ログイン", login_form_path,  class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
+        <% end %>
+
+
+        <!-----確認用----->
+              <% if current_user %>
+              <%= "#{@current_user.name}" %>
+              <% end %>
+              <% if current_app %>
+              <%= "#{@current_app.app_name}" %>
+              <% end %>
+              <% if current_menbur %>
+              <%= "#{@current_menbur.nickname}" %>
+              <% end %>
+        <!---------------->
+      </ul>
+    </div>
+  </div>
+</nav>

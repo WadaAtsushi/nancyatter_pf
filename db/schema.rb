@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 2021_08_16_213555) do
     t.integer "nancyatterapp_id"
     t.integer "user_id"
     t.string "nickname"
+    t.string "icon_image"
     t.string "profile_image"
     t.string "profile"
     t.integer "del_flag"

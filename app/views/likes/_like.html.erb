@@ -1,0 +1,8 @@
+ <% if @current_app.feature_like == "implement" %>
+    <% if Like.find_by(menbur_id: @post.menbur.id, post_id: @post.id)%>
+        <%= link_to((tag.span class: "fa fa-heart like-btn-unlike"), like_destroy_path(@post.id), {method:"post"}) %>  
+    <% else %>
+        <%= link_to((tag.span class: "fa fa-heart like-btn"), like_create_path(@post.id), {method:"post"}) %>
+    <% end %>
+    <%= Like.where(post_id: @post.id).count %>
+<% end %>

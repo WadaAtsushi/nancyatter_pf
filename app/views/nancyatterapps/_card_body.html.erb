@@ -1,0 +1,32 @@
+<% case @nancyatterapp.app_color %>
+<% when "red" %>
+  <% card_text_color = "text-dark" %>
+  <% card_bg_color = "background: rgb(255, 200, 213);"%>
+  <% card_btn_color = "background: rgb(255, 43, 43);"%>
+<% when "blue" %>
+  <% card_text_color = "text-dark" %>
+  <% card_bg_color = "background: rgb(225, 248, 248);"%>
+  <% card_btn_color = "background: rgb(0, 46, 252);"%>
+<% when "yellow" %>
+  <% card_text_color = "text-dark" %>
+  <% card_bg_color = "background: rgb(253, 249, 184);"%>
+  <% card_btn_color = "background: rgb(255, 208, 0);"%> 
+<% when "green" %>
+  <% card_text_color = "text-dark" %>
+  <% card_bg_color = "background: rgb(211, 255, 211);"%>  
+  <% card_btn_color = "background: rgb(34, 235, 16);"%>
+<% when "black" %>
+  <% card_text_color = "text-light" %>
+  <% card_bg_color = "background: rgb(0, 0, 0);"%>
+  <% card_btn_color = "background: rgb(133, 133, 133);"%>
+<% else %>
+  <% card_text_color = "text-light" %>
+  <% card_bg_color = "background: rgb(225, 248, 248);"%>
+  <% card_btn_color = "background: rgb(67, 229, 250);"%>
+<% end %>
+
+<div class="card-body" style="<%= card_bg_color %>" >
+  <%= tag.h4 "#{@nancyatterapp.app_name}", class:"card-title #{card_text_color}", style:"text-decoration: none;" %>
+  <%= tag.p "管理者：#{@nancyatterapp.user.name}", class:"card-text #{card_text_color}" %>
+  <%= link_to("アプリ ▶︎", app_login_path(@nancyatterapp.id), class:"btn text-light", style:"#{card_btn_color}") %>
+</div>

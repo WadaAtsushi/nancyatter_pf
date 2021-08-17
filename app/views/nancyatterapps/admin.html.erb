@@ -1,2 +1,49 @@
-<h1>Nancyatterapps#admin</h1>
-<p>Find me in app/views/nancyatterapps/admin.html.erb</p>
+<div class="container-fluid" >
+  <div class="row justify-content-center">
+    <div class="col-sm-10 col-md-6 mb-5 mt-5" >
+      <%= tag.h1 "アプリ管理", class:"mt-2" %>
+      <div class="accordion" id="accordionExample">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne" >
+            <button class="accordion-button" style="<%= @accordion_header_bg_color %>" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <%= tag.h4 "アプリ情報", class:"#{@accordion_header_text_color} font-weight-bold" %>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body <%= @accordion_text_color %> " style = "<%= @accordion_bg_color %>">
+      　　　　　<%= render'nancyatterapps/content_app' %>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" style="<%= @accordion_header_bg_color %>" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <%= tag.h4 "投稿カテゴリーの追加", class:"#{@accordion_header_text_color} font-weight-bold" %>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body <%= @accordion_text_color %> " style = "<%= @accordion_bg_color %>">
+              <%= render'nancyatterapps/edit_category' %>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" style="<%= @accordion_header_bg_color %>" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <%= tag.h4 "設定変更", class:"#{@accordion_header_text_color} font-weight-bold" %>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body <%= @accordion_text_color %> " style = "<%= @accordion_bg_color %>">
+               <%= render'nancyatterapps/edit_app'  %>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
