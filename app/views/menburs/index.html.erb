@@ -15,7 +15,7 @@
             <% @menburs.each do |menbur| %>
               <% if menbur.del_flag!=1 %>
                 <%= tag.tr %>
-                  <%= tag.td image_tag menbur.profile_image.url, class: "profile-img", style:"width:80px;border-radius:30%;" %>
+                  <%= tag.td image_tag menbur.icon_image.url, class: "profile-img", style:"width:80px;border-radius:30%;" %>
                   <%= tag.td menbur.nickname, class:"#{@text_color}" %>
                   <%= tag.td menbur.user.name, class:"#{@text_color}" %>
                   <%= tag.td menbur.nancyatterapp.app_name, class:"#{@text_color}" %>

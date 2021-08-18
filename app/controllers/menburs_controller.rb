@@ -31,7 +31,7 @@ class MenbursController < ApplicationController
 
   private
     def menbur_params
-      params.require(:menbur).permit(:nickname, :profile, :profile_image)
+      params.require(:menbur).permit(:nickname, :profile, :icon_image, :profile_image)
     end
 
 end

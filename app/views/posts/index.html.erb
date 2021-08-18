@@ -6,7 +6,7 @@
           <% if post.del_flag!=1 %>
             <div class="d-sm-flex flex-sm-wrap justify-content-left mt-3 mb-2 border-bottom <%= @border_color %>" >
               <div class="m-2 mx-md-4">
-                <%= link_to((image_tag post.menbur.profile_image.url, class:"row", style:"width:80px;border-radius:30%;"),menbur_show_path(post.menbur.id)) %>
+                <%= link_to((image_tag post.menbur.icon_image.url, class:"row", style:"width:80px;border-radius:30%;"),menbur_show_path(post.menbur.id)) %>
                 <%= link_to(post.menbur.nickname, menbur_show_path(post.menbur.id), class:"mb-0 mx-0.5 #{@text_color}", style:"text-decoration: none;") %>
               </div>
               <div class="m-2 mt-md-0 mt-3 mx-md-5">
@@ -15,11 +15,7 @@
                 <%= tag.p "♡#{Like.where(post_id: post.id).count}", class:"mb-3" %>
               </div>
               <div class="mx-md-5">
-                <% if @current_menbur %>
-                  <%= link_to((image_tag post.post_image.url, class:"img-fluid mb-3 ", style:"width:200px;"), post_show_path(post.id)) %>
-                <% else %>
-                  <%= image_tag post.post_image.url, class:"img-fluid mb-3 ", style:"width:200px;" %>
-                <% end %>
+                <%= link_to((image_tag post.post_image.url, class:"img-fluid mb-3 ", style:"width:200px;"), post_show_path(post.id)) %>
               </div>
             </div>
           <% end %>

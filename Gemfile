@@ -57,4 +57,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'carrierwave'
 
-gem 'kaminari'    #ページネーション
+gem 'kaminari'    #ページネーション  => ターミナルコマンド　/　rails g kaminari:views bootstrap3
+

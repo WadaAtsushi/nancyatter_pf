@@ -3,5 +3,5 @@ class Like < ApplicationRecord
     validates :post_id, {presence: true}
 
     belongs_to :post
-    belongs_to :menburd
+    belongs_to :menbur
 end
