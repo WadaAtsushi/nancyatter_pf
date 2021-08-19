@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg <%= @nav_text_color %>" style = "<%= @nav_bg_color%>">
+<nav class="navbar navbar-expand-lg navbar-light <%= @nav_text_color %>" style = "<%= @nav_bg_color%>">
   <div class="container-fluid">
     <%= link_to("Nancyatter", app_logout_path, class: "navbar-brand #{@nav_text_color}") %>
 
@@ -33,8 +33,8 @@
           <%= link_to("ログアウト", logout_path, class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
           
         <% else %>
-          <!-- ユーザー一覧は確認用 -
-          <%= link_to("ユーザー一覧", users_index_path, class: "nav-item nav-link active px-3 #{@nav_text_color}") %>-->
+          <!-- ユーザー一覧は確認用 -->
+          <%= link_to("ユーザー一覧", users_index_path, class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
           <%= link_to("会員登録", signin_path, class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
           <%= link_to("ログイン", login_form_path,  class: "nav-item nav-link active px-3 #{@nav_text_color}") %>
         <% end %>
