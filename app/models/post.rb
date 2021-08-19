@@ -4,7 +4,7 @@ class Post < ApplicationRecord
     validates :user_id, presence: true
     validates :post_image, presence: true
     
-    # mount_uploader :post_image, ImageUploader
+    mount_uploader :post_image, ImageUploader
 
     belongs_to :user
     belongs_to :menbur
