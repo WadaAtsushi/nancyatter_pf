@@ -110,18 +110,11 @@ test_comment = Comment.new(
 test_comment.save
 end
 
-
-p " ====== comment テストデータ作成 ====================================="
-
 test_user = User.new(name: "test", email: "test@test.com", password: "test")
 test_user.save
-p "=============="
-p test_user
 
 test_appcategory = Appcategory.new(category_name: "test-category")
 test_appcategory.save
-p "=============="
-p test_appcategory
 
 test_app = Nancyatterapp.new(
     app_name: "テストアプリ",
@@ -138,8 +131,6 @@ test_app = Nancyatterapp.new(
     feature_image: "implement"
 )
 test_app.save
-p "================="
-test_app
 
 
 test_menbur1 = Menbur.new(
