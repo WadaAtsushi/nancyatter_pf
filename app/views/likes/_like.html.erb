@@ -1,8 +1,8 @@
  <% if @current_app.feature_like == "implement" && @current_menbur %>
     <% if Like.find_by(menbur_id: @post.menbur.id, post_id: @post.id)%>
-        <%= link_to((tag.span class: "fa fa-heart like-btn-unlike"), like_destroy_path(@post.id)) %>  
+        <%= link_to((tag.span class: "fa fa-heart", style:"color: #ff2581;"), like_destroy_path(@post.id)) %>  
     <% else %>
-        <%= link_to((tag.span class: "fa fa-heart like-btn"), like_create_path(@post.id)) %>
+        <%= link_to((tag.span class: "fa fa-heart like-btn", style:"color: #3b3b3b;"), like_create_path(@post.id)) %>
     <% end %>
     <%= Like.where(post_id: @post.id).count %>
 <% elsif  @current_app.feature_like == "implement"%>
