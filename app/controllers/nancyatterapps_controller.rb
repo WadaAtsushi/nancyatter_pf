@@ -1,5 +1,7 @@
 class NancyatterappsController < ApplicationController
   def top
+    session[:nancyatterapp_id] = nil
+    session[:menbur_id] = nil
   end
 
   def new

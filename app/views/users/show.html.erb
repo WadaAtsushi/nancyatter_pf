@@ -2,20 +2,7 @@
   <div class="row justify-content-center">
     <div class="col-sm-12 col-md-8 col-lg-6">
       <%= tag.h1 "#{@user.name}のマイページです", class:"mt-3" %>
-        <% if @user.menburs %>
-          <% @user.menburs.each do |menbur| %>
-           <div class="card w-100  mb-3">
-             <%= link_to("#{menbur.nancyatterapp.app_name}",app_login_path(menbur.nancyatterapp.id), class:"h4 card-header #{@card_header_text_color}", style: "#{@card_header_bg_color} text-decoration: none;" )%>
-              <div class="card-body d-sm-flex flex-sm-wrap justify-content-left" >
-                <%= image_tag menbur.nancyatterapp.app_image.url, class:"card-image mx-2", style:"width:200px;" %>
-                <div class="mt-sm-0 mt-3 mx-2">
-                    <%= tag.p "管理ユーザー： #{User.find_by(id: menbur.nancyatterapp.user_id).name}", class:"mb-0 #{@card_text_color}" %>
-                    <%= tag.p "ニックネーム： #{menbur.nickname}", class:"mb-0 #{@card_text_color}" %>
-                </div>
-              </div>
-            </div>
-          <% end %>
-        <% end %>
+        <%= render 'users/card_body' %>
     </div>
   </div>
 </div>

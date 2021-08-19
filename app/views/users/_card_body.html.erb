@@ -1,0 +1,49 @@
+<% if @user.menburs %>
+  <% @user.menburs.each do |menbur| %>
+
+    <% case menbur.nancyatterapp.app_color %>
+    <% when "red" %>
+        <% card_text_color = "text-dark" %>
+        <% card_bg_color = "background: rgb(255, 200, 213);"%>
+        <% card_header_bg_color = "background: rgb(255, 43, 43);"%>
+        <% card_header_text_color = "text-dark" %>
+    <% when "blue" %>
+        <% card_text_color = "text-dark" %>
+        <% card_bg_color = "background: rgb(225, 248, 248);"%>
+        <% card_header_bg_color = "background: rgb(0, 46, 252);"%>
+        <% card_header_text_color = "text-light" %>
+    <% when "yellow" %>
+        <% card_text_color = "text-dark" %>
+        <% card_bg_color = "background: rgb(253, 249, 184);"%>
+        <% card_header_bg_color = "background: rgb(255, 208, 0);"%> 
+        <% card_header_text_color = "text-dark" %>
+    <% when "green" %>
+        <% card_text_color = "text-dark" %>
+        <% card_bg_color = "background: rgb(211, 255, 211);"%>  
+        <% card_header_bg_color = "background: rgb(34, 235, 16);"%>
+        <% card_header_text_color = "text-dark" %>
+    <% when "black" %>
+        <% card_text_color = "text-light" %>
+        <% card_bg_color = "background: rgb(0, 0, 0);"%>
+        <% card_header_bg_color = "background: rgb(133, 133, 133);"%>
+        <% card_header_text_color = "text-white" %>
+    <% else %>
+        <% card_text_color = "text-light" %>
+        <% card_bg_color = "background: rgb(225, 248, 248);"%>
+        <% card_header_bg_color = "background: rgb(67, 229, 250);"%>
+        <% card_header_text_color = "text-dark" %>
+    <% end %>
+
+  
+    <div class="card w-100  mb-3", style="<%= card_bg_color %>">
+      <%= link_to("#{menbur.nancyatterapp.app_name}",app_login_path(menbur.nancyatterapp.id), class:"h4 card-header #{card_header_text_color}", style: "#{card_header_bg_color} text-decoration: none;" )%>
+      <div class="card-body d-sm-flex flex-sm-wrap justify-content-left" >
+        <%= image_tag menbur.nancyatterapp.app_image.url, class:"card-image mx-2", style:"width:200px;" %>
+        <div class="mt-sm-0 mt-3 mx-2 ">
+            <%= tag.p "管理ユーザー： #{User.find_by(id: menbur.nancyatterapp.user_id).name}", class:"mb-0 #{@card_text_color}" %>
+            <%= tag.p "ニックネーム： #{menbur.nickname}", class:"mb-0 #{@card_text_color}" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+<% end %>
