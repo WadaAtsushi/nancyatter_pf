@@ -11,7 +11,7 @@
         <%= tag.p "投稿内容: #{@post.content}", class:"card-text #{@card_text_color}" %>
       </div>
       <div class="card-likes mb-3">
-        <%= render 'likes/like_show' if @current_app.feature_like == "implement"%>
+        <%= render 'likes/post_show' if @current_app.feature_like == "implement"%>
       </div>
       <% if @post.menbur == @current_menbur %>
         <div class="card-btn">

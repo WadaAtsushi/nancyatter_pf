@@ -35,10 +35,10 @@ Rails.application.routes.draw do
   patch 'post_update/:id', to: 'posts#update',  as: 'post_update'
   get  'post_destroy/:id', to: 'posts#destroy', as: 'post_destroy'
 
-  get          'like_show_create/:id', to: 'likes#create_post_show',    as: 'like_post_show_create'
-  get         'like_show_destroy/:id', to: 'likes#destroy_post_show',   as: 'like_post_show_destroy'
-  get    'like_post_index_create/:id', to: 'likes#create_post_index',   as: 'like_post_index_create'
-  get   'like_post_index_destroy/:id', to: 'likes#destroy_post_index',  as: 'like_post_index_destroy'
+  get          'like_show_create/:id', to: 'likes#create_post_show',     as: 'like_post_show_create'
+  get         'like_show_destroy/:id', to: 'likes#destroy_post_show',    as: 'like_post_show_destroy'
+  get    'like_post_index_create/:id', to: 'likes#create_post_index',    as: 'like_post_index_create'
+  get   'like_post_index_destroy/:id', to: 'likes#destroy_post_index',   as: 'like_post_index_destroy'
   get   'like_menbur_show_create/:id', to: 'likes#create_menbur_show',   as: 'like_menbur_show_create'
   get  'like_menbur_show_destroy/:id', to: 'likes#destroy_menbur_show',  as: 'like_menbur_show_destroy'
 
