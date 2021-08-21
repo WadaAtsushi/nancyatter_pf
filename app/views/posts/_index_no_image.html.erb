@@ -9,7 +9,7 @@
             </div>
             
             <div class="m-2 mt-md-0 mt-3 mx-md-2">
-              <%= link_to("#{post.title} / #{post.postcategory.category_name}", post_show_path(post.id), class:"mb-0 #{@text_color}", style:"text-decoration: none;") %>
+              <%= link_to("#{post.title} / #{post.postcategory.category_name if @current_app.feature_category == "implement"}", post_show_path(post.id), class:"mb-0 #{@text_color}", style:"text-decoration: none;") %>
               <%= tag.p post.content, class:"mb-0 w-60" %>
               <% @post = post %>
               <%= render 'likes/post_index' if @current_app.feature_like == "implement" %>

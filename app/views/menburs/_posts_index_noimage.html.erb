@@ -4,10 +4,11 @@
         <% if post.del_flag!=1 %>
           <div class="col-md-8 col-lg-7 d-sm-flex flex-sm-wrap justify-content-between mt-3 mb-2 border-bottom <%= @border_color %>" >
             <div class="m-2 mt-md-0 mt-3 mx-md-5">
-              <%= link_to("#{post.title} / #{post.postcategory.category_name}", post_show_path(post.id), class:"mb-0 #{@text_color}", style:"text-decoration: none;") %>
+              <%= link_to("#{post.title} / #{post.postcategory.category_name if @current_app.feature_category == "implement"}", post_show_path(post.id), class:"mb-0 #{@text_color}", style:"text-decoration: none;") %>
               <%= tag.p post.content, class:"mb-0" %>
-              <% post = @post %>
-              <%= render 'likes/menbur_show' @current_app.feature_like == "implement"%>
+              <% @post = post %>
+              <%= render 'likes/menbur_show' if @current_app.feature_like == "implement"%>
+              
             </div>
           </div>
         <% end %>

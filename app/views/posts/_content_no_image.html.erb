@@ -5,6 +5,7 @@
     <div class="mx-2 mb-sm-0 mt-3">
       <div class="card-text">
         <%= tag.p "タイトル: #{@post.title}", class:"card-title #{@card_text_color}" %>
+        <%= tag.p "カテゴリー: #{@post.postcategory.category_name}", class:"card-title #{@card_text_color}" if @current_app.feature_category == "implement" %>
         <%= tag.p "投稿内容: #{@post.content}", class:"card-text #{@card_text_color}" %>
       </div>
       <div class="card-likes mb-3">
