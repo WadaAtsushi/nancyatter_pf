@@ -2,9 +2,6 @@
   <%= tag.p "投稿詳細", class:"card-header #{@card_header_text_color} ", style:"#{@card_header_bg_color}" %>
   
   <div class="card-body d-sm-flex flex-sm-wrap justify-content-left">
-    <div class="card-image ">
-      <%= image_tag  @post.post_image.url, class:"mx-2", style:"width:250px;"%>
-    </div>
     <div class="mx-2 mb-sm-0 mt-3">
       <div class="card-text">
         <%= tag.p "タイトル: #{@post.title}", class:"card-title #{@card_text_color}" %>

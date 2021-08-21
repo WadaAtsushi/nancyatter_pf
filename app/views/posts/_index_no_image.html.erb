@@ -1,0 +1,20 @@
+<div class="col-sm-10 col-md-8 col-lg-7 mb-6 mt-4" >
+  <%= tag.h1 "投稿一覧", class:"border-bottom #{@border_color} pb-3 mt-2" %>
+    <% @posts.each do |post| %>
+        <% if post.del_flag!=1 %>
+        <div class="d-sm-flex flex-sm-wrap justify-content-left mt-3 mb-2 border-bottom <%= @border_color %>" >
+            <div class="m-2 mx-md-4">
+              <%= link_to((image_tag post.menbur.icon_image.url, class:"row", style:"width:80px;border-radius:30%;"),menbur_show_path(post.menbur.id)) %>
+              <%= link_to(post.menbur.nickname, menbur_show_path(post.menbur.id), class:"mb-0 mx-0.5 #{@text_color}", style:"text-decoration: none;") %>
+            </div>
+            
+            <div class="m-2 mt-md-0 mt-3 mx-md-2">
+              <%= link_to("#{post.title} / #{post.postcategory.category_name}", post_show_path(post.id), class:"mb-0 #{@text_color}", style:"text-decoration: none;") %>
+              <%= tag.p post.content, class:"mb-0 w-60" %>
+              <% @post = post %>
+              <%= render 'likes/post_index' if @current_app.feature_like == "implement" %>
+            </div>
+        </div>
+        <% end %>
+    <% end %> 
+</div>

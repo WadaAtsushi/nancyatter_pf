@@ -3,7 +3,11 @@
     <%= render 'menburs/profile' %>
   </div>
   <div class="row justify-content-center mt-5">
-    <%= render 'menburs/posts_index' %>
+    <% if @current_app.feature_image == "implement" %>
+      <%= render 'menburs/posts_index' %>
+    <% else %>
+      <%= render 'menburs/posts_index_noimage' %>
+    <% end %>
   </div>
   <div class="row" >
     <div class="d-flex justify-content-center mt-3">

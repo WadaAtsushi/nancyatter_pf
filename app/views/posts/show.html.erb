@@ -5,13 +5,15 @@
         <%= link_to((image_tag @post.menbur.icon_image.url,class:"my-3", style:"width:70px;border-radius:30%;"),menbur_show_path(@post.menbur.id)) %>
         <%= tag.h1 "#{@post.menbur.nickname}の投稿", class:"mx-3 mt-4 " %>
       </div>
-      <%= render 'posts/content' %>
+      <% if @post.post_image.url %>
+        <%= render 'posts/content' %>
+      <% else %>
+        <%= render 'posts/content_no_image' %>
+      <% end %>
 
       <% if @current_app.feature_comment == "implement" %>
         <%= render 'comments/index' %>
-        <% if @current_menbur %>
-          <%= render 'comments/new' %>
-        <% end %>
+        <%= render 'comments/new' if @current_menbur %>      
       <% end %>
     </div>
   </div>

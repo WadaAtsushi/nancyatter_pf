@@ -11,7 +11,7 @@ class PostsController < ApplicationController
     @post = @current_menbur.posts.build(post_params)
     @post.user_id = @current_user.id
     @post.nancyatterapp_id =  @current_app.id
-
+    
     if @post.save
       flash.notice = "投稿しました。"
       redirect_to post_index_path
@@ -30,8 +30,6 @@ class PostsController < ApplicationController
   def show
     @post = Post.find_by(id: params[:id])
     @comments = @post.comments
-    p "---------------"
-    p @comments
   end
 
   def edit

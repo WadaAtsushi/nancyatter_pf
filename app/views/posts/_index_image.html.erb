@@ -1,0 +1,24 @@
+<div class="col-sm-11 col-md-10 col-lg-9 mb-6 mt-4" >  
+  <%= tag.h1 "投稿一覧", class:"border-bottom #{@border_color} pb-3 mt-2" %>
+    <% @posts.each do |post| %>
+        <% if post.del_flag!=1 %>
+        <div class="d-sm-flex flex-sm-wrap justify-content-left mt-3 mb-2 border-bottom <%= @border_color %>" >
+            <div class="m-2 mx-md-4">
+              <%= link_to((image_tag post.menbur.icon_image.url, class:"row", style:"width:80px;border-radius:30%;"),menbur_show_path(post.menbur.id)) %>
+              <%= link_to(post.menbur.nickname, menbur_show_path(post.menbur.id), class:"mb-0 mx-0.5 #{@text_color}", style:"text-decoration: none;") %>
+            </div>
+
+            <div class="m-2 mt-md-0 mt-3 mx-md-2">
+              <%= link_to("#{post.title} / #{post.postcategory.category_name if @current_app.feature_category == "implement"}", post_show_path(post.id), class:"mb-0 #{@text_color}", style:"text-decoration: none;") %>
+              <%= tag.p post.content, class:"mb-0", style:"width:350px;" %>
+              <% @post = post %>
+              <%= render 'likes/post_index' if @current_app.feature_like == "implement"%>
+            </div>
+            
+            <div class="mx-md-3">
+              <%= link_to((image_tag post.post_image.url, class:"img-fluid mb-3 ", style:"width:200px;"), post_show_path(post.id)) if post.post_image.url%>
+            </div>
+        </div>
+        <% end %>
+    <% end %> 
+</div>
