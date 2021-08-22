@@ -1,3 +1,9 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>   
+
 # README
 
 ## 概要
@@ -21,6 +27,9 @@
 * 設定項目
 　　いいね機能・コメント機能の表示/非表示、　SNS毎のカラー設定
 
+<div class="tesxt-primary">
+  画像一覧
+</div>
 <img width="1379" alt="スクリーンショット 2021-08-22 11 43 50" src="https://user-images.githubusercontent.com/82780759/130340425-393a90c9-41a1-4dd9-9420-d9d9a906e4a2.png" style="with:70px;">
 <img width="1424" alt="スクリーンショット 2021-08-22 11 33 32" src="https://user-images.githubusercontent.com/82780759/130340433-0d178ac4-be23-4e06-8414-0c7559a05582.png">
 <img width="1425" alt="スクリーンショット 2021-08-22 11 33 56" src="https://user-images.githubusercontent.com/82780759/130340432-26a33866-f325-4141-ae95-d7cd54638f3b.png">
