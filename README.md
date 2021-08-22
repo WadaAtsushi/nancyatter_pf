@@ -32,8 +32,8 @@
 
 <table>
 <tr>
-  <td>トップページ</th>
-  <td>SNS一覧画面</th>
+  <td>トップページ</td>
+  <td>SNS一覧画面</td>
 </tr>
 <tr>
   <td><img width="320" alt="スクリーンショット 2021-08-22 11 43 50" src="https://user-images.githubusercontent.com/82780759/130340425-393a90c9-41a1-4dd9-9420-d9d9a906e4a2.png" style="with:70px;"></td>
@@ -43,23 +43,23 @@
 
 <table>
 <tr>
-  <td>各SNSのトップページ</th>
-  <td>カラー設定変更後</th>
+  <td>各SNSのトップページ</td>
+  <td>カラー設定変更後</td>
 </tr>
 <tr>
   <td><img width="320" alt="スクリーンショット 2021-08-22 11 33 56" src="https://user-images.githubusercontent.com/82780759/130340432-26a33866-f325-4141-ae95-d7cd54638f3b.png"></td>
-  <td><img width="320" alt="スクリーンショット 2021-08-22 11 34 22" src="https://user-images.githubusercontent.com/82780759/130340431-4af510c3-2bb9-455d-860b-79a901f7390c.png"></td>
+  <td><img width="320" alt="スクリーンショット 2021-08-22 11 35 25" src="https://user-images.githubusercontent.com/82780759/130340427-3bd79c2d-40da-4cdd-8ed1-89721e586546.png"></td>
 </tr>
 </table>
 
 <table>
 <tr>
-  <td>設定ページ１</th>
-  <td>設定ページ２</th>
+  <td>設定ページ１</td>
+  <td>設定ページ２</td>
 </tr>
 <tr>
-  <img width="320" alt="スクリーンショット 2021-08-22 11 35 25" src="https://user-images.githubusercontent.com/82780759/130340427-3bd79c2d-40da-4cdd-8ed1-89721e586546.png">
-  <img width="320" alt="スクリーンショット 2021-08-22 11 34 33" src="https://user-images.githubusercontent.com/82780759/130340428-30553fc1-d2a1-4dfd-bdb4-734677c9899b.png">
+  <td><img width="320" alt="スクリーンショット 2021-08-22 11 34 22" src="https://user-images.githubusercontent.com/82780759/130340431-4af510c3-2bb9-455d-860b-79a901f7390c.png"></td>
+  <td><img width="320" alt="スクリーンショット 2021-08-22 11 34 33" src="https://user-images.githubusercontent.com/82780759/130340428-30553fc1-d2a1-4dfd-bdb4-734677c9899b.png"></td>
 </tr>
 </table>
 
