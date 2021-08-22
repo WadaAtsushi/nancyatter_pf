@@ -21,6 +21,14 @@
 * 設定項目
 　　いいね機能・コメント機能の表示/非表示、　SNS毎のカラー設定
 
+<img width="1379" alt="スクリーンショット 2021-08-22 11 43 50" src="https://user-images.githubusercontent.com/82780759/130340425-393a90c9-41a1-4dd9-9420-d9d9a906e4a2.png">
+<img width="1425" alt="スクリーンショット 2021-08-22 11 35 25" src="https://user-images.githubusercontent.com/82780759/130340427-3bd79c2d-40da-4cdd-8ed1-89721e586546.png">
+<img width="1426" alt="スクリーンショット 2021-08-22 11 34 33" src="https://user-images.githubusercontent.com/82780759/130340428-30553fc1-d2a1-4dfd-bdb4-734677c9899b.png">
+<img width="1424" alt="スクリーンショット 2021-08-22 11 34 22" src="https://user-images.githubusercontent.com/82780759/130340431-4af510c3-2bb9-455d-860b-79a901f7390c.png">
+<img width="1425" alt="スクリーンショット 2021-08-22 11 33 56" src="https://user-images.githubusercontent.com/82780759/130340432-26a33866-f325-4141-ae95-d7cd54638f3b.png">
+<img width="1424" alt="スクリーンショット 2021-08-22 11 33 32" src="https://user-images.githubusercontent.com/82780759/130340433-0d178ac4-be23-4e06-8414-0c7559a05582.png">
+
+
 ## 今後の展開
 * フォロー機能・検索機能の追加（短期的目標）
 * Javascriptを学習してSPAでビューを表示（中期的目標）
