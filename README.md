@@ -27,11 +27,27 @@
 * 設定項目
 　　いいね機能・コメント機能の表示/非表示、　SNS毎のカラー設定
 
-<div class="tesxt-primary">
+
   画像一覧
-</div>
-<img width="320" alt="スクリーンショット 2021-08-22 11 43 50" src="https://user-images.githubusercontent.com/82780759/130340425-393a90c9-41a1-4dd9-9420-d9d9a906e4a2.png" style="with:70px;">
-<img width="320" alt="スクリーンショット 2021-08-22 11 33 32" src="https://user-images.githubusercontent.com/82780759/130340433-0d178ac4-be23-4e06-8414-0c7559a05582.png">
+
+<table>
+<thead>
+<tr>
+  <th>トップページ</th>
+  <th>一覧画面</th>
+</tr>
+</table>
+
+<tbody>
+<tr>
+
+<td><img width="320" alt="スクリーンショット 2021-08-22 11 43 50" src="https://user-images.githubusercontent.com/82780759/130340425-393a90c9-41a1-4dd9-9420-d9d9a906e4a2.png" style="with:70px;"></td>
+<td><img width="320" alt="スクリーンショット 2021-08-22 11 33 32" src="https://user-images.githubusercontent.com/82780759/130340433-0d178ac4-be23-4e06-8414-0c7559a05582.png"></td>
+</tr>
+</tbody>
+
+</table>
+
 <img width="320" alt="スクリーンショット 2021-08-22 11 33 56" src="https://user-images.githubusercontent.com/82780759/130340432-26a33866-f325-4141-ae95-d7cd54638f3b.png">
 <img width="320" alt="スクリーンショット 2021-08-22 11 34 22" src="https://user-images.githubusercontent.com/82780759/130340431-4af510c3-2bb9-455d-860b-79a901f7390c.png">
 <img width="320" alt="スクリーンショット 2021-08-22 11 34 33" src="https://user-images.githubusercontent.com/82780759/130340428-30553fc1-d2a1-4dfd-bdb4-734677c9899b.png">
