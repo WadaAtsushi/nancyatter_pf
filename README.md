@@ -31,21 +31,14 @@
   画像一覧
 
 <table>
-<thead>
 <tr>
-  <th>トップページ</th>
-  <th>一覧画面</th>
+  <td>トップページ</th>
+  <td>一覧画面</th>
 </tr>
-</table>
-
-<tbody>
 <tr>
-
-<td><img width="320" alt="スクリーンショット 2021-08-22 11 43 50" src="https://user-images.githubusercontent.com/82780759/130340425-393a90c9-41a1-4dd9-9420-d9d9a906e4a2.png" style="with:70px;"></td>
-<td><img width="320" alt="スクリーンショット 2021-08-22 11 33 32" src="https://user-images.githubusercontent.com/82780759/130340433-0d178ac4-be23-4e06-8414-0c7559a05582.png"></td>
+  <td><img width="320" alt="スクリーンショット 2021-08-22 11 43 50" src="https://user-images.githubusercontent.com/82780759/130340425-393a90c9-41a1-4dd9-9420-d9d9a906e4a2.png" style="with:70px;"></td>
+  <td><img width="320" alt="スクリーンショット 2021-08-22 11 33 32" src="https://user-images.githubusercontent.com/82780759/130340433-0d178ac4-be23-4e06-8414-0c7559a05582.png"></td>
 </tr>
-</tbody>
-
 </table>
 
 <img width="320" alt="スクリーンショット 2021-08-22 11 33 56" src="https://user-images.githubusercontent.com/82780759/130340432-26a33866-f325-4141-ae95-d7cd54638f3b.png">
