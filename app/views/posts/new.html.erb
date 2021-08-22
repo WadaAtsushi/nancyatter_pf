@@ -5,7 +5,7 @@
         <%= form_for(@post, url: post_create_path) do |f| %>
           <%= f.label :"タイトル", class: "mt-3" %>
           <%= f.text_field :title, class: "form-control" %>
-          <% if @current_app.feature_category == "implement" %>%
+          <% if @current_app.feature_category == "implement" %>
             <%= tag.div f.label :"カテゴリー", class:"post-new-label mt-3" %>
             <%= f.collection_select :postcategory_id, Postcategory.where(nancyatterapp_id: @current_app.id), :id, :category_name, {include_blank: "選択してください"},{class: "form-control input-sm"} %>
           <% end %>
